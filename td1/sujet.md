@@ -10,18 +10,83 @@ Le but de ces exercices est de faire un rappel rapide de la notion de tableau, q
 
 #### Tableau 1 dimension
 
-* Saisissez ce code. Nommez le fichier td1_tableau.php
+* Saisissez le code ci-dessous
+* Complétez les éléments (les ??)
+* Nommez le fichier td1_tableau.php
 * Testez-le
+
+```php
+<?php
+// Déclaration d'un tableau 1 dimension
+$tableau_notes = array(12, 14, 10);
+
+// Valeur de la 1ère note directement grâce à l'indice
+echo $tableau_notes[ ?? ];
+echo '<br>';
+
+// Ajout la note de 15 dans le tableau $tableau_notes
+??? ;
+
+// Boucle de lecture
+foreach (?? as ??) {
+  echo ?? .'<br>';
+}
+echo 'Nombre de notes '. ??;
+?>
+```
 
 #### Tableau associatif
 
-* Saisissez ce code. Nommez le fichier td1_tableau_associatif.php
+* Saisissez le code ci-dessous
+* Complétez les éléments (les ??)
+* Nommez le fichier td1_tableau_associatif.php
 * Testez-le
+
+```php
+<?php
+// Déclaration d'un tableau associatif
+$tableau_notes = array("Partiel"=>15, "TP"=>11);
+
+// Valeur de la 1ère note directement grâce à son nom
+echo 'Note du partiel : '.$tableau_notes[ ?? ];
+
+//boucle pour afficher les notes avec leur clé
+foreach (?? as ??) {
+  echo 'Note du ?? : '.??;
+  echo '<br>';
+}
+?>
+```
 
 #### Tableau 2 dimensions
 
-* Saisissez ce code. Nommez le fichier td1_tableau_2d.php
+* Saisissez le code ci-dessous
+* Complétez les éléments (les ??)
+* Nommez le fichier td1_tableau_2d.php
 * Testez-le
+
+```php
+<?php
+// Déclaration d'un tableau 2 dimension
+$tableau_notes = array();
+// Ajout de données,$tableau_notes est un tableau de tableau
+$tableau_notes[0] = array('Pierre',14);
+$tableau_notes[1] = array('Paul',10);
+$tableau_notes[2] = array('Jacques',12);
+
+// Afficher la note de Paul
+echo $tableau_notes ?? ;
+
+// Boucle de lecture
+foreach ($tableau_notes as ?? ) {
+  // $etudiant est un tableau
+  echo ?? ; // nom de l'étudiant
+  echo ' : ';
+  echo ?? ; // note de l'étudiant
+  echo '<br>';
+}
+?>
+```
 
 ### Les fonctions
 
@@ -46,12 +111,26 @@ principal de l’application pourra récupérer le résultat de la fonction.
 
 On vous fournit le code suivant.
 
-1. Saisissez ce code. Nommez le fichier nommé td1_fonction.php puis testez-le
+1. Saisissez le code ci-dessous. Nommez le fichier nommé td1_fonction.php puis testez-le
+
+```php
+<?php
+// Déclaration de la fonction
+function affichage_footer(){
+  echo 'IUT de Troyes - Département MMI - Module M3203 Programmation objet';
+}
+
+// Appel de la fonction
+affichage_footer();
+?>
+```
+
+
 2. Modifiez le code pour :
 
 * Créez une fonction footer
 1. Elle possède 3 arguments : le nom de l’IUT, le département et le nom du module
-2. Elle retourne une chaine de caractères qui la concaténation des 3 arguments
+2. Elle retourne une chaine de caractères qui est la concaténation des 3 arguments
 * Ajoutez le code qui appellera la fonction footer et affichera la valeur qu’elle retourne.
 
 3. Comparez les deux fonctions affichage_footer et footer.
