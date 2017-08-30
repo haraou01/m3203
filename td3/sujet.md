@@ -3,6 +3,7 @@
 ## TD3 encapsulation
 
 ### Rappels de Cours
+
 L’encapsulation consiste à déclarer les propriétés (attributs) en private au lieu de public.
 Pourquoi ? Pour l’intégrité des données, c’est-à-dire pour que les propriétés ne prennent pas n’importe quelles valeurs. 
 Le programmeur d’une classe va ainsi construire un code fiable. Le programmeur utilisant de cette classe n’aura pas à se 
@@ -200,5 +201,5 @@ L’adresse IP doit être une adresse valide.
 
 ?>
 ```
-*Testez le code
+* Testez le code
 
