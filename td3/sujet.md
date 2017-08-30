@@ -121,8 +121,8 @@ Code de la classe Personne2
 		}
 
 		// initialisation du nom en majsucules
-		public function set_nom($n){
-			$this->nom=strtoupper($n);
+		public function setNom($n){
+			$this->nom=strtoupper($n); 
 		}
 	}
 ?>
@@ -141,18 +141,21 @@ Voici le code de l’application td3_exo2.php
 	//----------------------------------------------------
 
 	require 'personne2.php';
+	
 	// Nouvelle instance de class.Personne
 	$etudiant=new Personne2('Martin','Paul',19); // le nom est en minuscules
+	
 	echo $etudiant->sePresente().'<br>'; //Je m'appelle Paul MARTIN et j'ai 19 ans (nom en majuscules)
+	
 	// Modification de l'attribut Nom
-	$etudiant->set_nom('Durand'); // nom en minuscules 
+	$etudiant->setNom('Durand'); // nom en minuscules 
 	echo $etudiant->sePresente().'<br>'; // Je m'appelle Paul DURAND et j'ai 19 ans (nom en majuscules)
 ?>
 ```
 
 A FAIRE
-*	Créez une nouvelle version du code de la classe (PersonnePersonne2) et de l’application td3_exo1td3_exo2)
-*	Testez td3_exo3.php
+*	Créez une nouvelle version du code de la classe (Personne2) et de l’application (td3_exo2)
+*	Testez td3_exo2.php
 
 ###	Exercice N°3
 
