@@ -4,4 +4,6 @@ Vous trouverez sur ce site tous les supports de cours pour le module de M3203 du
 
 ## Organisation du module
 
+* [CM1 : Les concepts](CM1_M3203_POO_1617.pptx)
 * [TD1 : révisions](td1/sujet.md)
+* [TD2 : les concepts de la POO](td2/sujet.md)
