@@ -1,77 +1,146 @@
-# TP N°1 Programmation Orienté Objet
+# TP N°1 : Héritage
 
-## OBJECTIFS :
+##	Objectifs DU TD
 
-*	Construire des classes mettant en œuvre les concepts d’interface, d’héritage et d’encapsulation.
-*	Être capable d’écrire seul(e) du code PHP en POO 
+*	Comprendre le concept d’héritage.
+*	Mettre en oeuvre le concept d’héritage : aidez-vous des TD précédents pour écrire le code demandé.
 
-## TRAVAIL DEMANDE
+## Principe : 
 
-* Codez en PHP les classes suivantes en les regroupant dans un fichier nommé *individu.php*
-*	Codez l’application *tp1.php* pour tester vos classes
-*	A l’issue de votre travail, déposez vos fichiers *individu.php* et *tp1.php* dans la rubrique travaux dans le 
-dossier correspondant à votre groupe.
+l'héritage est un grand principe de la programmation orientée objet. Une classe qui hérite d’une **classe Mère** hérite de toutes ses propriétés et de toutes ses méthodes. L’intérêt pour le programmeur est de pouvoir spécialiser la classe Mère (dont le code est éprouvé) en ajoutant à la **classe fille** de nouvelles propriétés et de nouvelles méthodes.
+
+`extends` mot clé qui permet de déclarer l’héritage.
+
+**Héritage multiple** : une classe peut héritée d’une classe qui hérite elle-même d’une autre classe.
+**Opérateur de résolution de portée** : l’opérateur `::` (deux points) fournit un moyen d’accéder aux propriétés et aux méthodes de la classe Mère. Lorsque vous référencez ces éléments en dehors de la définition de la classe, utilisez le nom de la classe.
+
+### Exemple de code pour une classe
+
+````php
+<?php
+	// Comprendre l'héritage
+	// Classe Mère
+	class A {
+		// Propriétés
+		public $prop1;
+		public $prop2;
+		// Constructeur
+		public function __construct($arg1,$arg2){
+			$this->prop1=$arg1;
+			$this->prop2=$arg2;
+		}
+		public function lire_information(){
+			return $this->prop1.' '.$this->prop2;
+		}
+	}
+	// Class Fille
+	class B extends A{
+		// Propriété de la classe Fille
+		public $prop3;
+		//Constructeur
+		public function __construct($arg1,$arg2,$arg3){
+			// Appel du constructeur de la classe parent
+			parent::__construct($arg1,$arg2);
+			$this->prop3=$arg3;
+		}
+		// Méthode qui permet de modifier la propriété 3
+		public function change($nouvellevaleur){
+			$this->prop3=$nouvellevaleur;
+		}
+		// Surcharge de la méthode lire_information
+		public function lire_information(){
+			return parent::lire_information().' '.$this->prop3;
+		}
+	}
+?>
+````
+
+### Exemple d'utilisation de ces classes :
+
+````php
+<?php
+	// MMI - M3203 POO
+	// Cours héritage
+	// Notion d'héritage
+	// Appel de la classe
+	require ('heritage.php');
+	// Un objet de la classe A
+	$objet1=new A('Classe A','Mère');
+	// Affichage des valeurs des 
+	// propriétés de la classe A
+	echo $objet1->lire_information();
+	echo '<br>';
+	// Un objet de la classe B, 
+	// spécialisation de la classe A
+	$objet2=new B('Classe B','Fille','');
+	echo $objet2->lire_information();
+	echo '<br>';
+	$objet2->change('spécialisation');
+	echo $objet2->lire_information();
+	echo '<br>';
+?>
+````
 
 
-###	Classe Individu et interface iHumain
-La classe Individu est une classe abstraite qui implémente l’interface iHumain qui définit les méthodes 
-•	travailler($nombreheures)
-•	reposer($nombrejours)
-•	sePresente()
+##	EXERCICE N°1
 
-Les attributs
-Les 5 attributs privés de la classe Individu sont :
-•	$nom : valeur alphanumérique
-•	$prenom : valeur alphanumérique
-•	$sexe : valeur alphanumérique (homme ou femme)
-•	$revenu : revenu en euros, valeur numérique calculée valant 0 par défaut
-•	$conges : nombre de congés, valeur numérique calculée valant 0 par défaut
+###	Créer la classe Animal (animal.php) – [Voir TD2](https://dannebicque.github.io/m3203/td2/sujet.md)
 
-Les méthodes
+La classe Animal possède 5 propriétés :
 
-•	La méthode travailler($nombreheures) permet de calculer le revenu cumulé d’un individu sur la base horaire de 9.5 euros. A chaque appel de cette méthode, on cumulera le salaire calculé au salaire précédent.
-•	La méthode reposer($nombrejours) permet de cumuler le nombre de jours de congés pris. (A chaque appel de la méthode, on cumule les congés)
-•	La méthode sePresente() retourne un texte avec le nom et le prénom de l’individu
-•	La méthode RAZrevenu() permettra de remettre à zéro le revenu.
-•	La méthode RAZconges() permettra de remettre à zéro le nombre de jours de congés
-•	La méthode declareSalaire() retournera un texte indiquant le nom, le prénom et le revenu de l’individus
+1.	Le nom de l’animal
+2.	L’âge (actuel)
+3.	L’âge théorique maximum
+4.	Le régime alimentaire : tableau d’aliments ([Voir TD1](https://dannebicque.github.io/m3203/td1/sujet.md))
+5.	état: ‘mort’ ou ‘vivant’ (par défaut, état =’vivant’)
 
-Codez cette classe
-
+La classe possède les méthodes suivantes :
 
-II.	Classe Etudiant
-La classe Etudiant est une classe qui hérite de la classe Individu 
+*	Son constructeur initialise seulement les propriétés nom, age, age maximum.
+*	lire_informations(), qui affiche le nom, l’âge de l’animal et son état : ’mort’ ou ‘vivant’
+*	mange($aliment) qui ajoute l’aliment donné en argument au tableau d’aliments (propriété régime alimentaire). Attention, un animal mort ne mange plus !
+*	vieillir($nbannees) qui fait vieillir d’un nombre d’années ($nbannees) l’animal => incrémentation de son âge. Lorsqu’on son âge dépasse l’âge maximum, l’animal meurt : état= ‘mort’.
+*	lire_regime() qui affiche la liste des aliments mangés.
 
-Les attributs
-Les attributs privés de la classe Etudiant sont :
-•	$numetudiant : 10 chiffres et une lettre
-•	$age valeur numérique
-•	$formation : valeur alphanumérique
-•	$resultat : valeur alphanumérique calculée lors de l’évaluation (méthode évaluer) qui prendra deux valeurs possibles ‘reçu(e)’ ou ‘ajourné(e)’
+### Créer l’application (td4_heritage.php)
 
-Cette classe possède également un attribut propre à la classe $nbetudiants qui permettra de connaître le nombre d’instances créées.
+*	créer l’instance $bestiole de la classe animal : 
+	Nom : ‘Une drôle de bête’, Age : 1, Age théorique maximum : 10, état : ‘vivant’
+*	Appeler la méthode : mange(‘fruits’)
+*	Appeler la méthode : mange(‘légumes’)
+*	Appeler la méthode : lire_regime()
+*	Appeler la méthode : lire_informations()
+*	Appeler la méthode : vieillir(4)
+*	Appeler la méthode : lire_informations()
+*	Appeler la méthode : vieillir(6)
+*	Appeler la méthode : lire_informations()
 
-Les méthodes 
+##	EXERCICE N°2
 
-•	La méthode travailler($nombreheures) permet de calculer le revenu cumulé d’un(e) étudiant(e) sur la base horaire de 9.5 euros. Mais ce tarif horaire sera minoré de 20% si l’étudiant(e) est âgé(e) de moins de 18 ans. A chaque appel de cette méthode, on cumulera le salaire calculé au salaire précédent.
-•	La méthode evaluer($noteExamen) retournera un texte précisant le nom, le prénom et l’indication reçu(e) ou ajourné(e) à l’examen selon la note. Pour être reçu, il faut avoir la moyenne.
-•	D’autres méthodes sont à créer : observez le code du fichier tp2.php pour les repérer.
+###	Compléter le fichier animal.php
 
-Codez cette classe
+Ajouter la classe Chien qui hérite de la classe Animal.
 
-III.	Classe Etudiant_mmi
-La classe Etudiant_mmi hérite de la classe Etudiant. Il n’est pas possible d’hériter de la classe Etudiant_mmi.
+La classe Chien possède une propriété : nom familier
 
-Les attributs
+Méthodes :
+*	Constructeur
+*	Méthode : seNomme() qui retourne le nom familier
+*	Méthode : lire_informations() surcharge la méthode de la classe Animal. Retourne le nom de l’animal, son age, son état (mort ou vivant) et le nom familier.
 
-Un attribut privé : $option. Valeur alphanumérique indiquant le titre de l’option choisie par un(e) étudiant(e) au semestre 4
+###	Compléter l’application td4_heritage
 
-Les méthodes
+*	Créer l’instance $chien1 de la classe Chien
+	Nom : 'Chien', Age : 2,	Age théorique maximum : 20, etat : ‘vivant’, 	Nom familier : ‘Médor’
+*	Appeler la méthode : seNomme() ;
+*	Appeler la méthode : mange(‘viande)
+*	Appeler la méthode : mange(‘croquettes)
+*	Appeler la méthode : lire_regime()
+*	Appeler la méthode : lire_informations() ;
 
-•	La méthode quelleOption() retourne un texte indiquant le nom, le prénom et l’option choisie
-•	La méthode ChangerOption($option) permet de modifier l’option de l’étudiant
-•	La méthode sePresente reprend la méthode initiale et complète le texte par ‘ et je suis en MMI’.
+###	Question Bonus
 
-Codez cette classe
+On pourrait considérer qu'un Chien est un animal dont l'age théorique est toujours le même, et qu'il est fixé à 18 ans. Modifiez la classe Animal avec cette spécificité, et modifiez les appels et le constructeur de la classe Chien en conséquence.
+
 
 
