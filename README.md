@@ -8,4 +8,5 @@ Vous trouverez sur ce site tous les supports de cours pour le module de M3203 du
 * [TD1 : révisions](td1/sujet.md)
 * [TD2 : les concepts de la POO](td2/sujet.md)
 * [TD3 : encapsulation](td3/sujet.md)
-* [TP1](tp1/sujet.md)
+* [TP1 : Héritage](tp1/sujet.md)
+* [TP2 : Héritage et encapsulation](tp2/sujet.md)
