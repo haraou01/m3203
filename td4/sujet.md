@@ -9,7 +9,70 @@ multiple. Une classe pouvant être une classe fille mais aussi une classe parent
 Héritage multiple : L’héritage est le moyen de spécialiser une classe sans compromettre son code original. PHP autorise l’héritage multiple. Une classe pouvant être une classe fille mais aussi une classe parent.  (cf. figure 1)
 
 ````php
+<?php
+//exemple 1
+//Source H. Boulet
 
+//Classe Parent
+abstract class A {
+
+   //Propriétés
+   public $prop1;
+   public $prop2;
+   
+   // Propriété de la classe
+   static $nbinstances;
+   
+   //constructeur
+   public function__construct($a1, $a2)
+   {
+      $this->prop1 = $a1;
+      $this->prop2 = $a2;
+      
+      //incrémentation du nombre d'instances
+      self::$nbinstances++;
+   }
+   
+   //destructeur
+   public function __destruct()
+   {
+         //décrémente le nombre d'instances
+         self::$nbinstances--;
+   }
+   
+   public function lire_proprietes()
+   {
+      return 'Propriété 1 :'.$this->prop1.', Propriété 2 :'.$this->prop2;
+   }
+}
+
+//Classe fille de A, mais aussi classe parent de C
+class B extends A {
+
+   //Propriétés
+   public $prop3;
+   
+   //constructeur
+   public function__construct($a1, $a2, $a3)
+   {
+      parent::__construct($a1, $a2);
+      $this->prop3 = $a3;
+   }
+}
+
+//Classe fille de B
+final class C extends B {
+
+   //Propriétés
+   public $prop4;
+   
+   //constructeur
+   public function__construct($a1, $a2, $a3, $a4)
+   {
+      parent::__construct($a1, $a2, $a3);
+      $this->prop4 = $a4;
+   }
+}
 ````
 Dans l'exemple ci-dessus, la classe B hérite de la classe A. La classe C hérite de la classe B.
 
@@ -20,7 +83,19 @@ conserver une certaine intégrité du code. C’est possible si on place le mot 
 (cf. exemple ci-dessous)
 
 ````php
+//Classe fille de B
+final class C extends B {
 
+   //Propriétés
+   public $prop4;
+   
+   //constructeur
+   public function__construct($a1, $a2, $a3, $a4)
+   {
+      parent::__construct($a1, $a2, $a3);
+      $this->prop4 = $a4;
+   }
+}
 ````
 
 Dans l'exemple ci-dessus, on ne pourra pas créer de classes à partir de la classe C. L’héritage est interdit.
@@ -30,8 +105,53 @@ Dans l'exemple ci-dessus, on ne pourra pas créer de classes à partir de la cla
 une classe abstraite ne peut pas être instanciée. L’héritage devient alors le seul moyen pour exploiter ses propriétés et 
 ses méthodes. Les classes filles pouvant alors être instanciées. (cf. exemples ci-dessous). 
 
+````php
+//Classe Parent
+abstract class A {
 
-Classe abstraite, mot-clé abstract
+   //Propriétés
+   public $prop1;
+   public $prop2;
+   
+   // Propriété de la classe
+   static $nbinstances;
+   
+   //constructeur
+   public function__construct($a1, $a2)
+   {
+      $this->prop1 = $a1;
+      $this->prop2 = $a2;
+      
+      //incrémentation du nombre d'instances
+      self::$nbinstances++;
+   }
+   
+   //destructeur
+   public function __destruct()
+   {
+         //décrémente le nombre d'instances
+         self::$nbinstances--;
+   }
+   
+   public function lire_proprietes()
+   {
+      return 'Propriété 1 :'.$this->prop1.', Propriété 2 :'.$this->prop2;
+   }
+}
+````
+Classe abstraite, mot-clé abstract.
+
+````php
+<?php
+//Exemple. Source H. Boulet
+
+require 'heritagemultiple.php';
+
+$objet1 = new 1('V1', 'V2'); //fatal error: Cannot instantiate abstract class A
+echo $objet1->lire_proprietes(); //impossible car l'instanciation est impossible
+````
+
+
 Dans l'exemple ci-dessus, la classe A est abstraite. Elle ne peut pas être instanciée. Le code ci-dessous montre que 
 l’instanciation de la classe A provoque une erreur *PHP : Fatal Error, cannot instanciate abstract class A*
 
@@ -48,7 +168,10 @@ propriétés de classe. Il est ainsi possible d’exploiter cette caractéristiq
 d’instances créées. Cela s’avère particulièrement utile lors de la mise en œuvre de l’héritage. Mais pas seulement. 
 (cf. exemples ci-dessous)
 
+![Propriété de classe](/images/figure5.png)
 
+
+![Application, afficher le nombre d'instances créées](/images/figure6.png)
 
 Dans le code ci-dessus, il est possible de connaître le nombre d’instances (objets) créées. 
 
@@ -58,8 +181,7 @@ Dans le code ci-dessus, il est possible de connaître le nombre d’instances (o
 
 Voici la représentation UML du diagramme des classes à créer dans cet exercice.
 
-
-
+![Diagramme de Classe UML](/images/uml.png)
 
 ###	Classe VehiculeAMoteur
 
