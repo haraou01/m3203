@@ -168,10 +168,10 @@ propriétés de classe. Il est ainsi possible d’exploiter cette caractéristiq
 d’instances créées. Cela s’avère particulièrement utile lors de la mise en œuvre de l’héritage. Mais pas seulement. 
 (cf. exemples ci-dessous)
 
-![Propriété de classe](/images/figure5.png)
+![Propriété de classe](image/figure5.png)
 
 
-![Application, afficher le nombre d'instances créées](/images/figure6.png)
+![Application, afficher le nombre d'instances créées](image/figure6.png)
 
 Dans le code ci-dessus, il est possible de connaître le nombre d’instances (objets) créées. 
 
@@ -181,7 +181,7 @@ Dans le code ci-dessus, il est possible de connaître le nombre d’instances (o
 
 Voici la représentation UML du diagramme des classes à créer dans cet exercice.
 
-![Diagramme de Classe UML](/images/uml.png)
+![Diagramme de Classe UML](image/uml.png)
 
 ###	Classe VehiculeAMoteur
 
