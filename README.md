@@ -10,3 +10,4 @@ Vous trouverez sur ce site tous les supports de cours pour le module de M3203 du
 * [TD3 : encapsulation](td3/sujet.md)
 * [TP1 : Héritage](tp1/sujet.md)
 * [TP2 : Héritage et encapsulation](tp2/sujet.md)
+* [TD4 : Héritage multiple](td4/sujet.md)
