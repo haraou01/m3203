@@ -83,6 +83,8 @@ conserver une certaine intégrité du code. C’est possible si on place le mot 
 (cf. exemple ci-dessous)
 
 ````php
+//Source H. Boulet
+
 //Classe fille de B
 final class C extends B {
 
@@ -106,6 +108,8 @@ une classe abstraite ne peut pas être instanciée. L’héritage devient alors 
 ses méthodes. Les classes filles pouvant alors être instanciées. (cf. exemples ci-dessous). 
 
 ````php
+//Source H. Boulet
+
 //Classe Parent
 abstract class A {
 
@@ -254,6 +258,8 @@ Voici le code de l’application attendue. A saisir et à tester.
 
 ````php
 <?php
+	//Source H. Boulet
+
 	// Mise en oeuvre de l'héritage
 	// IUT de Troyes - MMI
 
