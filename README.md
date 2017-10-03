@@ -12,3 +12,21 @@ Vous trouverez sur ce site tous les supports de cours pour le module de M3203 du
 * [TP2 : Héritage et encapsulation](tp2/sujet.md)
 * [TD4 : Héritage multiple](td4/sujet.md)
 * [TP3 : Interfaces](tp3/sujet.md)
+
+**Fin de la partie découverte de la POO**
+
+Les TD et TP suivant seront évalués sur 3 points, et permettront d'établir une note de TP. La dernière séance de TP sera un TP noté individuel.
+
+* [TP4 : ??](tp4/sujet.md)
+* [TP5 : ??](tp5/sujet.md)
+* [CM2 : ??](cm2/sujet.md)
+* [TD5 : ??](td5/sujet.md)
+* [TP6 : ??](tp6/sujet.md)
+* [TP7 : ??](tp7/sujet.md)
+* [TP8 : ??](tp8/sujet.md)
+* [TD6 : ??](td6/sujet.md)
+* [TP9 : ??](tp9/sujet.md)
+* [TP10 : ??](tp10/sujet.md) (semaine du 18/12)
+* [CM3 : Evaluation](cm3/sujet.md) le 20/12 à 15h30
+
+
