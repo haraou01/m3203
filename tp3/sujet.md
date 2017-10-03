@@ -10,6 +10,8 @@
 
 **Convention de nommage** : le nom de l’interface a pour initiale la lettre i minuscule.
 
+[Complément de cours sur les interfaces, à lire](Les-interfaces-en-PHP.pptx)
+
 ### Exemple de code
 
 Soit la classe Personne et une interface iPersonne
