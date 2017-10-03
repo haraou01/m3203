@@ -26,7 +26,7 @@ Les TD et TP suivant seront évalués sur 3 points, et permettront d'établir un
 * [TP8 : ??](tp8/sujet.md)
 * [TD6 : ??](td6/sujet.md)
 * [TP9 : ??](tp9/sujet.md)
-* [TP10 : ??](tp10/sujet.md) (semaine du 18/12)
+* [TP10 : TP Noté](tp10/sujet.md) (semaine du 18/12)
 * [CM3 : Evaluation](cm3/sujet.md) le 20/12 à 15h30
 
 
