@@ -32,12 +32,6 @@ Soit la classe Personne et une interface iPersonne
 			$this->nom=$n;
 			$this->prenom=$p;
 		}
-		public function sePresente(){
-			return 'Nom : '.$this->nom.' '.$this->prenom. ' nombre d\'heures : '.$this->cumulheures;
-		}
-		public function travaille($nbheures){
-			$this->cumulheures=$this->cumulheures+$nbheures;
-		}
 	}
 ?>
 ````
@@ -59,11 +53,30 @@ Soit une application instanciant la classe Personne
 
 L’exécution de cette application provoquera l’erreur suivante
 
+![Propriété de classe](image/erreur.jpg)
 
 car les méthodes sePresente() et travaille() n’ont pas été définies dans la classe Personne. Le contrat n’a pas été respecté !
 
 Nous pourrions proposer ce code :
 
+````php
+class Personne implements iPersonne {
+	// Propriétés
+	public $nom;
+	public $prenom;
+	public $cumulheures;
+	public function __construct($n,$p){
+		$this->nom=$n;
+		$this->prenom=$p;
+	}
+	public function sePresente(){
+		return 'Nom : '.$this->nom.' '.$this->prenom. ' nombre d\'heures : '.$this->cumulheures;
+	}
+	public function travaille($nbheures){
+		$this->cumulheures=$this->cumulheures+$nbheures;
+	}
+}
+````
 
 ##	Exercice
 
