@@ -16,11 +16,46 @@
 
 Soit la classe Personne et une interface iPersonne
 
+````php
+<?php
+	// Notion d'interface
+	interface iPersonne {
+		public function sePresente();
+		public function travaille($nbheures);
+	}
+	class Personne implements iPersonne {
+		// Propriétés
+		public $nom;
+		public $prenom;
+		public $cumulheures;
+		public function __construct($n,$p){
+			$this->nom=$n;
+			$this->prenom=$p;
+		}
+		public function sePresente(){
+			return 'Nom : '.$this->nom.' '.$this->prenom. ' nombre d\'heures : '.$this->cumulheures;
+		}
+		public function travaille($nbheures){
+			$this->cumulheures=$this->cumulheures+$nbheures;
+		}
+	}
+?>
+````
 
 
 Soit une application instanciant la classe Personne
 
-
+````php
+<?php
+	// Td7 : Interface
+	// Module M3203 POO
+	// IUT de TROYES - Département MMI
+	require 'personne.php';
+	$individu1=new Personne('Paul','Martin');
+	$individu1->travaille(35);
+	echo $individu1->sePresente();
+?>
+````
 
 L’exécution de cette application provoquera l’erreur suivante
 
