@@ -37,5 +37,65 @@ Puis ajouter la déclaration public function ajoutsaut() ; dans l’interface e
 
 Code de html.php
 
+````php
+<?php
+interface iEdition
+{  
+	public function ajoutParagraphe($texte); 
+	public function ajoutTitre($texte, $niveau); 
+}
+class HTML implements iEdition 
+{  
+	private $pagehtml;   
+	
+	public function __construct($t)  
+	{  
+		$this->pagehtml = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+		<html> 
+			<head>  
+				<head>
+					<meta charset="UTF-8">
+				</head>
+				<title>'.$t.'</title> 
+			</head> 
+			<body> 
+				<h1>'.$t.'</h1>';
+	}   
+	public function ajoutParagraphe($texte)  
+	{  
+		$this->pagehtml .= ' <p>'.$texte.'</p>'; 
+	}   
+	
+	public function ajoutTitre($texte, $niveau)  
+	{  
+		$this->pagehtml .= ' <h'.$niveau.'>'.$texte.'</h'.$niveau.'>'; 
+	}   
+	
+	public function affiche()  
+	{  
+		$this->pagehtml .= ' </body> </html>'; 
+		echo $this->pagehtml; 
+	}
+}
+?>
+````
+
 Code de td7.php
+
+````php
+<?php
+require 'html.php';
+// Instanciation
+$doc = new HTML('La Programmation Objet');
+// Appels des méthodes
+$doc->ajoutTitre('La POO', 2);
+$doc->ajoutParagraphe('La POO c\'est formidable');
+$doc->ajoutParagraphe('Les étudiants en redemandent');
+$doc->ajoutParagraphe('surtout en MMI 2ème année');
+$doc->ajoutTitre('Les TDs', 2);
+$doc->ajoutParagraphe('Les étudiants adorent écrire du code PHP');
+$doc->ajoutParagraphe('Incroyable mais vrai');
+echo $doc->affiche();
+?>
+````
 
