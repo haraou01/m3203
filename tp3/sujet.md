@@ -53,7 +53,7 @@ Soit une application instanciant la classe Personne
 
 L’exécution de cette application provoquera l’erreur suivante
 
-![Propriété de classe](image/erreur.jpg)
+![Message d'erreur](erreur.jpg)
 
 car les méthodes sePresente() et travaille() n’ont pas été définies dans la classe Personne. Le contrat n’a pas été respecté !
 
