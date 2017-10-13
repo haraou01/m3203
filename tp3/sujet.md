@@ -81,7 +81,7 @@ class Personne implements iPersonne {
 ##	Exercice
 
 Nous vous proposons d’analyser le code ci-dessous puis de l’écrire pour le tester.
-Puis ajouter la déclaration public function ajoutsaut() ; dans l’interface et tester à nouveau.
+Puis ajouter la déclaration public function ajoutsaut() dans l’interface et dans votre classe, puis tester à nouveau. Pensez à ajouter des appels de cette nouvelle méthode dans le fichier de test td7.php.
 
 Code de html.php
 
@@ -147,3 +147,4 @@ echo $doc->affiche();
 ?>
 ````
 
+## Finaliser le TD précédent, et commencer le TP suivant (qui sera noté)
