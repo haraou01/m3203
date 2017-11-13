@@ -18,12 +18,12 @@ Vous trouverez sur ce site tous les supports de cours pour le module de M3203 du
 Les TD et TP suivant seront évalués sur 3 points, et permettront d'établir une note de TP. La dernière séance de TP sera un TP noté individuel.
 
 * [TP4 : Pour se remettre dans le bain](tp4/sujet.md)
-* [TP5 : Création des personnages](tp5/sujet.md)
+* [TP5 : Création de la structure](tp5/sujet.md)
 * [CM2 : ??](cm2/sujet.md)
 * [TD5 : Formulaires](td5/sujet.md)
 * [TP6 : Base de données](tp6/sujet.md)
-* [TP7 : Tournois](tp7/sujet.md)
-* [TP8 : Tournois](tp8/sujet.md)
+* [TP7 : ??](tp7/sujet.md)
+* [TP8 : ??](tp8/sujet.md)
 * [TD6 : ??](td6/sujet.md)
 * [TP9 : ??](tp9/sujet.md)
 * [TP10 : TP Noté](tp10/sujet.md) (semaine du 18/12)
