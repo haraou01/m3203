@@ -19,9 +19,9 @@ Les TD et TP suivant seront évalués sur 3 points, et permettront d'établir un
 
 * [TP4 : Pour se remettre dans le bain](tp4/sujet.md)
 * [TP5 : Création de la structure](tp5/sujet.md)
-* [CM2 : ??](cm2/sujet.md)
-* [TD5 : Formulaires](td5/sujet.md)
-* [TP6 : Base de données](tp6/sujet.md)
+* [CM2 : Rappels, nouveaux concepts (méthodes magiques), et UML](CM1_M3203_POO_1617.pptx)
+* [TD5 : Base de données](td5/sujet.md)
+* [TP6 : Formulaires](tp6/sujet.md)
 * [TP7 : ??](tp7/sujet.md)
 * [TP8 : ??](tp8/sujet.md)
 * [TD6 : ??](td6/sujet.md)
