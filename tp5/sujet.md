@@ -10,6 +10,15 @@ Pour ce premier TP, vous avez à votre disposition :
 
 **Vous devez faire valider le bon fonctionnement de tp5.php en fin de séance**
 
+## NOTATION
+
+Cet exercice sera à faire valider en fin de séance **obligatoirement**.
+
+* 0, rien n'est fait
+* 1, début d'exercice, mais non fonctionnel
+* 2, TP réalisé exactement comme demandé
+* 3, TP réalisé avec quelques améliorations/optimisations
+
 ## Sujet
 
 Ce premier TP consiste à construire les classes qui vont manipuler les livres et les auteurs de ces livres.
