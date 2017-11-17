@@ -5,8 +5,8 @@ Les TP qui vont suivre ont un lien entre eux. L'objectif est d'aboutir à une pe
 ## A disposition
 
 Pour ce premier TP, vous avez à votre disposition :
-* Un fichier contenant les interfaces que vous devez respecter. Ce fichier sera à inclure dans vos différentes classes.
-* Un fichier tp5.php qui vous permettra de tester le fonctionnement de vos classes.
+* Un fichier contenant les interfaces que vous devez respecter. Ce fichier sera à inclure dans vos différentes classes. [fichier interfaces.php](interfaces.php)
+* Un fichier tp5.php qui vous permettra de tester le fonctionnement de vos classes. [fichier tp5.php](tp5.php)
 
 **Vous devez faire valider le bon fonctionnement de tp5.php en fin de séance**
 
