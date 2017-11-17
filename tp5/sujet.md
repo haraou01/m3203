@@ -58,7 +58,7 @@ On va définir une classe abstraite livre qui contiendra les propriétés **priv
 
 **Implémentez cette classe et les méthodes nécessaires et décrites dans l'interface**
 
-### Classes enfants : BandeDessinnes et Roman
+### Classes enfants : BandeDessinnees et Roman
 
 On définira deux classes enfants de cette classe Livre.
 
