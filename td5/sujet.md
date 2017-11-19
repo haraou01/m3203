@@ -69,5 +69,7 @@ Cette méthode retournera le code HTML généré pour pouvoir affichier le formu
 
 ### Toutes les autres méthodes présentent dans l'interface ou dans le fichier de test.
 
+## Bonus
 
+Utiliser un framework CSS (Bootstrap, semanticUI, ...) pour la mise en page de vos formulaire.
 
