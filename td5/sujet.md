@@ -16,9 +16,11 @@ sans devoir écrire tout le code HTML.
 
 Dans cette séance, nous allons tout définir dans une seule classeL En général les frmaeworks définissent une 
 classe par type de champs et un formulaire est composé de plusieurs objets de type champs. Vous pouvez par 
-exemple consulter la document de symfony qui gérer les formulaires de cette manière [Documentation Symfony](https://symfony.com/doc/current/reference/forms/types.html)
+exemple consulter la document de symfony qui gérer les formulaires de cette manière [Documentation Symfony](https://symfony.com/doc/current/reference/forms/types.html). Cette seconde solution est plus souple et permet de construire le formulaire sans se soucier de sa mise en page et de l'ordre des champs.
 
-Cette solution prénsete plusieurs avantages
+**Dans notre cas on supposera que les champs sont construits dans l'ordre**
+
+Cette solution présente plusieurs avantages
 
 * réutilisabilité du code dans différents projets
 * Rapiditié de modification du style (le HTML est centralisé dans un unique fichier)
