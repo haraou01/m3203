@@ -29,10 +29,12 @@ ou des Artistes (et les classes filles).
 
 ## A faire
 
-Ecrire un fichier qui permet d'afficher un formulaire en lien avec la classe livre (et ses filles).
+Ecrire un fichier qui permet d'afficher un formulaire en lien avec la classe Artiste (et ses filles).
 Ecrire un fichier de traitement qui instancie la bonne classe.
 Utiliser les méthodes d'affichage des objets pour vérifier le bon enregistrement des données.
 
-Faire de même pour les Artistes.
+**On peut prendre pour simplification que le champ image est de type texte et contiendra le nom du fichier**
+
+Faire de même pour les Livres.
 
 Au final vous devriez avoir 4 fichiers.
