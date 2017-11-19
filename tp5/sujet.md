@@ -2,14 +2,6 @@
 
 Les TP qui vont suivre ont un lien entre eux. L'objectif est d'aboutir à une petite application permettant de gérer une collection de livre, et d'obtenir une sauvegarde dans une base de données. Pour simplifier le problème, nous ne nous formaliserons pas avec un structure MVC dans ces TP.
 
-## A disposition
-
-Pour ce premier TP, vous avez à votre disposition :
-* Un fichier contenant les interfaces que vous devez respecter. Ce fichier sera à inclure dans vos différentes classes. [fichier interfaces.php](interfaces.php)
-* Un fichier tp5.php qui vous permettra de tester le fonctionnement de vos classes. [fichier tp5.php](tp5.php)
-
-**Vous devez faire valider le bon fonctionnement de tp5.php en fin de séance**
-
 ## NOTATION
 
 Cet exercice sera à faire valider en fin de séance **obligatoirement**.
@@ -26,6 +18,14 @@ Ce premier TP consiste à construire les classes qui vont manipuler les livres e
 On souhaite disposer d'une structure suffisamment générique afin d'intégrer tous les types de livre et de gérer les auteurs et leur implication dans un ouvrage.
 
 **On va écrire chaque classe dans un fichier séparé. Ce fichier portera le nom de la classe.**
+
+## A disposition
+
+Pour ce premier TP, vous avez à votre disposition :
+* Un fichier contenant les interfaces que vous devez respecter. Ce fichier sera à inclure dans vos différentes classes. [fichier interfaces.php](interfaces.php)
+* Un fichier tp5.php qui vous permettra de tester le fonctionnement de vos classes. [fichier tp5.php](tp5.php)
+
+**Vous devez faire valider le bon fonctionnement de tp5.php en fin de séance**
 
 ## Classe Abstraite Humain et Classe Artiste
 
