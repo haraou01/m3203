@@ -38,3 +38,7 @@ Utiliser les méthodes d'affichage des objets pour vérifier le bon enregistreme
 Faire de même pour les Livres.
 
 Au final vous devriez avoir 4 fichiers.
+
+## Astuces
+
+Pour la gestion des auteurs et des fournisseurs, on peut imaginer écrire un fichier contenant des objets ou un tableau d'objets avec des auteurs et des dessinateurs. Cela permettrait de simuler une requête depuis une base de données.
