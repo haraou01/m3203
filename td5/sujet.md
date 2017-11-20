@@ -28,7 +28,7 @@ Cette solution présente plusieurs avantages
 ## A disposition
 
 Pour cette séance, vous avez à votre disposition :
-* Un fichier contenant les interfaces que vous devez respecter. Ce fichier sera à inclure dans vos différentes classes. [fichier interfacestd5.php](interfacestd5.php)
+* Un fichier contenant les interfaces que vous devez respecter. Ce fichier sera à inclure dans vos différentes classes. [fichier interfacestd5.php](interfacetd5.php)
 * Un fichier td5.php qui vous permettra de tester le fonctionnement de vos classes. [fichier td5.php](td5.php)
 
 **Vous devez faire valider le bon fonctionnement de td5.php en fin de séance**
