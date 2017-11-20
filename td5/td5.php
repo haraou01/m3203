@@ -32,7 +32,7 @@ $form3->ajoutChampSimple('Prénom', 'text', 'prenom');
 $form3->ajoutChampDate('Date de naissance', 'datenaissance');
 
 $form3->ajoutBoutonSubmit('Enregistrer');
-echo $form1->genereFormulaireHTML();
+echo $form3->genereFormulaireHTML();
 ?>
 </body>
 </html>
