@@ -22,7 +22,7 @@ Les TD et TP suivant seront évalués sur 3 points, et permettront d'établir un
 * [CM2 : Rappels, nouveaux concepts (méthodes magiques), et UML](CM1_M3203_POO_1617.pptx)
 * [TD5 : Formulaires](td5/sujet.md)
 * [TP6 : Formulaires](tp6/sujet.md)
-* [TP7 : ??](tp7/sujet.md)
+* [TP7 : Formulaires - Finalisation du TD5 et TP6](tp7/sujet.md)
 * [TP8 : ??](tp8/sujet.md)
 * [TD6 : ??](td6/sujet.md)
 * [TP9 : ??](tp9/sujet.md)
