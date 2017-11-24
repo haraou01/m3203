@@ -25,7 +25,7 @@ ou des Artistes (et les classes filles).
 
 **N'oubliez pas qu'une classe fille est une spécialisation d'une classe parent !**
 
-**Vous devez faire valider le bon fonctionnement de tp5.php en fin de séance**
+**Vous devez faire valider le bon fonctionnement de tp6.php en fin de séance**
 
 ## A faire
 
