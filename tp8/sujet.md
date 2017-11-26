@@ -22,9 +22,9 @@ et la classe ArtisteManager permettra les accès à la base de données et retou
 
 ## A disposition
 
-Un fichier [tp8.sql](tp8.sql) a intégrer dans votre base de données, et un fichier [tp8.php](tp8.php) pour effectuer les tests.
+Un fichier [tp8.sql](tp8.sql) a intégrer dans votre base de données.
 
-**Vous devez faire valider le bon fonctionnement de tp8.php en fin de séance**
+**Vous devez faire valider le bon fonctionnement en fin de séance**
 
 ## A faire
 
@@ -32,7 +32,9 @@ Nous allons concevoir le Manger pour la classe Artiste uniquement dans ce TP.
 
 Le schéma ci-dessous, illustre, sur un autre exemple, le principe que nous souhaitons mettre en place.
 
-[Image du principe à mettre en place](!principe.png)
+![Image du principe à mettre en place](principe.png)
+
+### La classe ArtisteManager
 
 La classe ArtisteManager contiendra les méthodes suivantes :
 
@@ -51,6 +53,11 @@ Un lien hypertexte (dernière colonne du tableau) permettra d’appeler le formu
 
 La classe ArtisteManager contiendra une propriété privée qui est la connexion à la base de données. Cette connexion sera initalisée par le constructeur.
 On pourrait, aussi, exploiter la classe SQL que l'on a écrit dans un précédent TP.
+
+### Le traitement
+
+* Modifier votre fichier de traitement pour ajouter un Artiste à votre base de données.
+* Ajouter un fichier permettant de lister tous les Artistes de votre base de données.
 
 ## Astuce
 
