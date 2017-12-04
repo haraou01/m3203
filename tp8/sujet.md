@@ -22,7 +22,8 @@ et la classe ArtisteManager permettra les accès à la base de données et retou
 
 ## A disposition
 
-Un fichier [tp8.sql](tp8.sql) a intégrer dans votre base de données.
+* Un fichier [tp8.sql](tp8.sql) à intégrer dans votre base de données.
+* Un fichier [tp8.php](tp8.php) à tester
 
 **Vous devez faire valider le bon fonctionnement en fin de séance**
 
@@ -52,12 +53,8 @@ la fonction getAll(). Les propriétés de chaque Artiste sont issues des getters
 Un lien hypertexte (dernière colonne du tableau) permettra d’appeler le formulaire de modification ($_GET['id']) 
 
 La classe ArtisteManager contiendra une propriété privée qui est la connexion à la base de données. Cette connexion sera initalisée par le constructeur.
-On pourrait, aussi, exploiter la classe SQL que l'on a écrit dans un précédent TP.
 
-### Le traitement
-
-* Modifier votre fichier de traitement pour ajouter un Artiste à votre base de données.
-* Ajouter un fichier permettant de lister tous les Artistes de votre base de données.
+*On pourrait, aussi, exploiter la classe SQL que l'on a écrit dans un précédent TP.*
 
 ## Astuce
 
@@ -94,6 +91,12 @@ caractères correspondant à un setter. Si la méthode ainsi générée existe, 
 L’intérêt de cette technique est de simplifier le code en le réduisant le nombre d’instructions. 
 * Constructeur : est tout simplement un appel de la fonction Hydrate. 
 * Update() est une méthode qui appelle la méthode hydrate pour mettre à jour un objet
+
+## Travail à Faire
+
+* Ecrire la classe ArtisteManager
+* Modifier et adapater votre classe Artiste (faite une copie de la classe fonctionnelle)
+* Faire fonctionner la classe ArtisteManager avec le fichier [tp8.php](tp8.php)
 
 ## Pour Aller plus loin
 
