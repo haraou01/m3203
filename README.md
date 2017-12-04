@@ -24,8 +24,8 @@ Les TD et TP suivant seront évalués sur 3 points, et permettront d'établir un
 * [TP6 : Formulaires](tp6/sujet.md)
 * [TP7 : Formulaires - Finalisation du TD5 et TP6](tp7/sujet.md)
 * [TP8 : Base de données](tp8/sujet.md)
-* [TD6 : ??](td6/sujet.md)
-* [TP9 : ??](tp9/sujet.md)
+* [TD6 : Base de données](td6/sujet.md)
+* [TP9 : Base de données](tp9/sujet.md)
 * [TP10 : TP Noté](tp10/sujet.md) le 20/12 à 8h00 ou 9h30
 * [CM3 : Evaluation](cm3/sujet.md) le 20/12 à 15h30
 
